@@ -1,0 +1,71 @@
+<div class="container">
+  <h1 class="display-1">BMI Calculator</h1>
+  <div class="alert alert-primary">
+    Formula <br />
+    <code>(mass(lbs) / height2(in)) x 703 = BMI(kg/m2) </code>
+    <br />
+    or
+    <br />
+    <code> (mass(kg) / height2(cm)) = BMI(kg/m2) </code>
+  </div>
+
+  <div class="row g-2">
+    <div class="col-12">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" name="metric" />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Metric</label
+        >
+      </div>
+    </div>
+    <div class="col-12">
+      <label class="form-label"> Height</label>
+      <div class="row">
+        <div class="form-floating col-4">
+          <div class="form-floating">
+            <input type="number" class="form-control" name="height" />
+            <label id="height">Feet</label>
+          </div>
+        </div>
+        <div id="inches" class="col-3">
+          <div class="form-floating">
+            <input type="number" class="form-control" name="inches" />
+            <label>Inches</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label"> Weight</label>
+      <div class="form-floating">
+        <input type="number" class="form-control" name="weight" />
+        <label id="mass">lbs</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" name="get">GO</button>
+    </div>
+  </div>
+
+  <br />
+
+  <div id="results" class="visually-hidden alert alert-danger">
+    <h2>Current BMI: <span id="bmi"></span></h2>
+    <h2>Target Weight Between: <span id="target"></span></h2>
+  </div>
+  <div class="alert alert-secondary">
+    <h5>BMI Legend</h5>
+    <ul id="legend">
+      <li>Severe Thinness < 16 <i></i></li>
+      <li>Moderate Thinness 16 - 17 <i></i></li>
+      <li>Mild Thinness 17 - 18.5 <i></i></li>
+      <li>Normal 18.5 - 25 <i></i></li>
+      <li>Overweight 25 - 30 <i></i></li>
+      <li>Obese Class I 30 - 35 <i></i></li>
+      <li>Obese Class II 35 - 40 <i></i></li>
+      <li>Obese Class III > 40 <i></i></li>
+    </ul>
+  </div>
+</div>
