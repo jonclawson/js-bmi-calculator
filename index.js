@@ -1,6 +1,7 @@
 // Import stylesheets
 import './style.css';
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
 import template from './template.html';
 
 // Write Javascript code!
