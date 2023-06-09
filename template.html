@@ -1,19 +1,5 @@
 <div class="container">
   <h1 class="display-1">BMI Calculator</h1>
-  <h6>
-  <a data-bs-toggle="collapse" 
-  href="#formula" role="button">How does it work?</a>
-  <h6>
-  <div class="collapse" id="formula" >
-    <div class="alert alert-primary">
-      A Formula is used to calculate your BMI <br />
-      Imperial: 
-      <code>(mass(lbs) / height2(in)) x 703 = BMI(kg/m2) </code>
-      <br />
-      Metric: 
-      <code> (mass(kg) / height2(m)) = BMI(kg/m2) </code>
-    </div>
-  </div>
 
   <div class="row g-2">
     <div class="col-12">
@@ -61,17 +47,67 @@
     <h2>Current BMI: <span id="bmi"></span></h2>
     <h2>Target Weight Between: <span id="target"></span></h2>
   </div>
-  <div class="alert alert-secondary">
-    <h5>BMI Legend</h5>
-    <ul id="legend">
-      <li>Severe Thinness < 16 <i></i></li>
-      <li>Moderate Thinness 16 - 17 <i></i></li>
-      <li>Mild Thinness 17 - 18.5 <i></i></li>
-      <li>Normal 18.5 - 25 <i></i></li>
-      <li>Overweight 25 - 30 <i></i></li>
-      <li>Obese Class I 30 - 35 <i></i></li>
-      <li>Obese Class II 35 - 40 <i></i></li>
-      <li>Obese Class III > 40 <i></i></li>
-    </ul>
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="false"
+          aria-controls="collapseOne"
+        >
+          How does it work
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          A Formula is used to calculate your BMI <br />
+          Imperial:
+          <code>(mass(lbs) / height2(in)) x 703 = BMI(kg/m2) </code>
+          <br />
+          Metric:
+          <code> (mass(kg) / height2(m)) = BMI(kg/m2) </code>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="true"
+          aria-controls="collapseTwo"
+        >
+          BMI Legend
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul id="legend">
+            <li>Severe Thinness < 16 <i></i></li>
+            <li>Moderate Thinness 16 - 17 <i></i></li>
+            <li>Mild Thinness 17 - 18.5 <i></i></li>
+            <li>Normal 18.5 - 25 <i></i></li>
+            <li>Overweight 25 - 30 <i></i></li>
+            <li>Obese Class I 30 - 35 <i></i></li>
+            <li>Obese Class II 35 - 40 <i></i></li>
+            <li>Obese Class III > 40 <i></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
