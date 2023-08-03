@@ -34,7 +34,7 @@ element('[name="get"]').onclick = () => {
 
   element('#bmi').textContent = bmi.toLocaleString('en');
   element('#target').textContent = `
-  ${Math.floor(max)} and ${Math.ceil(min)}
+  ${Math.floor(max)} - ${Math.ceil(min)}
   `;
 
   if (bmi) {
